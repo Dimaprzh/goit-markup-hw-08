@@ -1,0 +1,45 @@
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.about-list {
+    display: flex;
+
+    &__item:not(:first-child) {
+            margin-left: 30px;
+        }
+}
+
+.about-list__icons {
+    height: 120px;
+    width: 270px;
+    background-color: var(--about-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+
+}
+
+.about-list__title {
+    color: var(--primary-color);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.about-list__text {
+    color: var(--sencondary-color);
+    letter-spacing: 0.03em;
+    line-height: 1.7;
+}

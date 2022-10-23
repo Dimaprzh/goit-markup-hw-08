@@ -1,0 +1,40 @@
+.client-title {
+    font-weight: 700;
+    font-size: 36px;
+    color: var(--primary-color);
+    text-align: center;
+    letter-spacing: 0, 03em;
+}
+
+.client-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+        &__card {
+            margin: 15px;
+        }
+}
+
+.client-list__logo {
+    fill: var(--social-link);
+    border: 1px solid var(--social-link);
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    width: 170px;
+    display: flex;
+    margin-top: 50px;
+    border-radius: 4px;
+    transition-property: border, fill;
+    transition-timing-function: var(--cubic);
+    transition-duration: 250ms;
+
+        &:hover,
+        &:focus {
+            fill: var(--active-color);
+            border: 1px solid var(--active-color);
+        }
+}
+
+

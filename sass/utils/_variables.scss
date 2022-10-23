@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #212121;
+    --sencondary-color: #757575;
+    --active-color: #2196f3;
+    --about-background: #F5F4FA;
+    --social-link: #AFB1B8;
+    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+    --text-color: #ffffff;
+
+}
+
+body {
+    color: var(--primary-color);
+    font-family: "Roboto";
+    line-height: 1.1;
+    font-size: 14px;
+    
+}
+
