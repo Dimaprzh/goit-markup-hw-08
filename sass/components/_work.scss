@@ -1,6 +1,11 @@
 .work {
     padding: 0 0 94px 0;
 
+    @media screen and (max-width: 1199px) {
+        display: none;
+        
+    }
+
     &-title {
             color: var(--primary-color);
             font-weight: 700;
@@ -9,6 +14,8 @@
             text-align: center;
         }
 }
+
+
 
 .work-list {
     display: flex;
