@@ -8,8 +8,17 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
+    @media screen and (max-width: 1199px) {height: 400px;
+        padding-top: 118px;
+        padding-bottom: 118px;}
+            
+
     &-wrapper {
             text-align: center;
+            @media screen and (min-width: 480px){
+                width: 480px;
+                
+            }
         }
         &-title {
             color: var(--text-color);
@@ -20,6 +29,14 @@
             line-height: 1.4;
             max-width: 696px;
             margin: auto;
+            
+
+            @media screen and (max-width: 1199px) {
+                    max-width: 360px;
+                    height: 84px;
+                    font-size: 26px;
+                    line-height: 1.62;
+                }
         }
 }
 
