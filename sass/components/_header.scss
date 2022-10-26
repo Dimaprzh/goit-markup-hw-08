@@ -19,13 +19,11 @@
                
             }
 
-        &-nav {
-             display: flex;
-              
-              
-         }
-                
-                 
+               
+}
+
+.main-menu{
+    display: flex;
 }
 
 .header-nav__logo {
@@ -52,7 +50,7 @@
     display: flex;
     align-items: center;
     
-    @media screen and (max-width: 768px) { 
+    @media screen and (max-width: 767px) { 
         display: none;
     }
 }
@@ -118,7 +116,7 @@
         display: flex;
         align-items: center;
         margin-left: auto;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
                 display: none;
             }
     }

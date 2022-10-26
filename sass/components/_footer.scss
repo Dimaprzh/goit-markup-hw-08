@@ -1,12 +1,18 @@
 .footer {
     background-color: #2f303a;
-
-        &-container {
-            display: flex;
-        }
 }
-
-
+    
+.footer-container{
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+       
+.address-wrap{
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
 
 .footer-logo {
     font-weight: 700;
@@ -16,7 +22,7 @@
     font-style: normal;
     color: var(--text-color);
     display: block;
-    padding-top: 60px;
+    
     margin-bottom: 20px;
     transition: color 250ms var(--cubic);
 
@@ -26,8 +32,8 @@
         }
 }
 
-.footer-list__item:nth-child(3n) {
-    padding-bottom: 30px;
+.footer-list__item:not(:last-child) {
+    margin-bottom: 9px;
 }
 
 .footer-list__map {
@@ -60,20 +66,24 @@
 }
 
 .footer-socials {
-    margin-left: 70px;
+    @media  screen and (max-width:767px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
         &__text {
             font-weight: 700;
             letter-spacing: 0.03em;
             text-transform: uppercase;
             color: var(--text-color);
-            margin-top: 72px;
+            text-align: center;
         }
 
                 &__list {
                     display: flex;
                     align-items: center;
                     margin-top: 20px;
+                    justify-content: center;
                 }
 
 }
@@ -98,12 +108,15 @@
 
 .footer-submit {
     position: relative;
-    margin-top: 96px;
-    margin-left: 93px;
+   
 }
 
 .submit-container {
     position: relative;
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
 }
 
 .footer-submit__mail {
@@ -114,16 +127,23 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: rgba(47, 48, 58, 1);
 
+    @media screen and (max-width:767px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
         &:focus {
             outline: none;
             color: var(--text-color);
         }
 }
 
+
+
 .footer-submit__dscr {
     position: absolute;
     top: -25px;
-    left: 0;
+    left: 125px;
     margin-bottom: 20px;
     color: var(--text-color);
     font-weight: 700;
